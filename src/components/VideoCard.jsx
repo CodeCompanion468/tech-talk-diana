@@ -1,9 +1,3 @@
-/**
- * Card component to render a video entry.
- *
- * Props:
- * - video: An object with title, url, description and tags properties.
- */
 function VideoCard({ video }) {
   return (
     <div className="rounded-lg bg-[#112240] p-4 shadow hover:shadow-lg transition-shadow duration-200">
