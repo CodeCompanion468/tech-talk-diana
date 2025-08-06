@@ -1,12 +1,26 @@
-# React + Vite
+﻿# Tech Talk with Diana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a personal content hub built with:
 
-Currently, two official plugins are available:
+- **React** – front‑end UI library.
+- **Vite** – build tool for rapid development and hot‑module replacement.
+- **Tailwind CSS** – utility‑first CSS framework.
+- **React Router** – client‑side routing between pages.
+- **JSON data files** – stored in `src/data` for articles, videos and social links.
+- **Component‑based architecture** – reusable UI components under `src/components`.
+- **Pages** – separate views for Home, Articles and Videos under `src/pages`.
+- **Assets** – images in `src/assets`.
+- **GitHub Actions & Azure Static Web Apps** – automated build and deploy pipeline.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development
 
-## Expanding the ESLint configuration
+1. Install dependencies: `npm install`
+2. Run the development server: `npm run dev`
+3. Build for production: `npm run build`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Architecture
+
+- The project uses simple JSON data sources, so there’s no backend to set up.
+- React functional components and Tailwind classes handle the UI.
+- Filtering logic lives in the Articles and Videos pages.
+- Vite handles bundling and hot reload during development.
