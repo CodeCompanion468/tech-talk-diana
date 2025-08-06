@@ -1,0 +1,33 @@
+/*
+ * Global stylesheet for Tech Talk with Diana.
+ *
+ * This file imports Tailwind's base, component and utility layers.  It also
+ * defines some custom classes and variables used throughout the site.  Tailwind
+ * is used to handle the bulk of the styling via utility classes in the
+ * components themselves.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles can go below.  For instance, you can adjust the
+ * default body background colour and text colour here to fit the dark
+ * aesthetic of the site.
+ */
+body {
+  /* Use explicit hex values for colours and sizing instead of Tailwind utility classes */
+  color: #ffffff;
+  background-color: #0a192f;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  /* Explicit accent colour for links */
+  color: #64ffda;
+  text-decoration: underline;
+}
+a:hover {
+  color: #64ffda;
+}

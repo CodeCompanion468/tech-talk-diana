@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Deploying Applications to Azure with Terraform",
+    "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "A deep dive into using Terraform to manage Azure resources in a repeatable and automated fashion.",
+    "tags": ["Modern Cloud", "Automation"]
+  },
+  {
+    "title": "Building Continuous Delivery Pipelines",
+    "url": "https://www.youtube.com/embed/eVTXPUF4Oz4",
+    "description": "Learn how to set up CI/CD pipelines that improve operational excellence and accelerate delivery.",
+    "tags": ["Operational Excellence"]
+  },
+  {
+    "title": "Responsible AI for Leaders",
+    "url": "https://www.youtube.com/embed/9bZkp7q19f0",
+    "description": "Guidance on crafting an AI strategy that balances innovation with ethics and governance.",
+    "tags": ["AI Strategy"]
+  }
+]

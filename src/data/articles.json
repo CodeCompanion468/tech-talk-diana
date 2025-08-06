@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Architecting a Modern Cloud Infrastructure",
+    "url": "https://www.example.com/articles/modern-cloud-architecture",
+    "description": "An overview of best practices for building scalable, secure cloud environments leveraging Azure services and infrastructure as code.",
+    "tags": ["Modern Cloud"]
+  },
+  {
+    "title": "Automating Operations with DevOps Pipelines",
+    "url": "https://www.example.com/articles/operational-excellence-automation",
+    "description": "How to implement CI/CD pipelines with Terraform and GitHub Actions to drive operational excellence and automation.",
+    "tags": ["Operational Excellence", "Automation"]
+  },
+  {
+    "title": "AI Strategy: From Proof of Concept to Production",
+    "url": "https://www.example.com/articles/ai-strategy",
+    "description": "Strategies for developing and deploying AI solutions responsibly and effectively across your organization.",
+    "tags": ["AI Strategy"]
+  }
+]
