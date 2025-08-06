@@ -1,12 +1,3 @@
-/*
- * Global stylesheet for Tech Talk with Diana.
- *
- * This file imports Tailwind's base, component and utility layers.  It also
- * defines some custom classes and variables used throughout the site.  Tailwind
- * is used to handle the bulk of the styling via utility classes in the
- * components themselves.
- */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
