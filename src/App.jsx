@@ -4,12 +4,6 @@ import Home from './pages/Home'
 import Articles from './pages/Articles'
 import Videos from './pages/Videos'
 
-/**
- * The top‑level application component.
- *
- * This component sets up client‑side routing between the Home, Articles and
- * Videos pages.  It also renders a persistent navigation bar and footer.
- */
 function App() {
   return (
     <div className="min-h-screen flex flex-col text-white" style={{ backgroundColor: '#0a192f' }}>
