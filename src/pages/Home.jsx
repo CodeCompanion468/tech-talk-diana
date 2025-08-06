@@ -2,17 +2,9 @@ import banner from '../assets/banner.png'
 import profile from '../assets/profile.png'
 import socialLinks from '../data/socialLinks.json'
 
-/**
- * Home page for Tech Talk with Diana.
- *
- * This page introduces the site with a banner, a brief description of the
- * topics covered, and links to social profiles.  It uses imported images
- * stored in the assets directory and reads social links from a JSON file.
- */
 function Home() {
   return (
     <div>
-      {/* Hero banner with overlayed title and tagline */}
       <div className="relative rounded-lg overflow-hidden shadow-lg">
         <img
           src={banner}
@@ -29,7 +21,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Introduction section */}
       <div className="mt-8 flex flex-col md:flex-row items-center gap-8">
         <img
           src={profile}
@@ -46,14 +37,13 @@ function Home() {
             leader, you’ll find actionable guidance to help you navigate the
             evolving tech landscape.
           </p>
-          {/* Social links */}
           <div className="flex flex-wrap gap-4">
             {socialLinks.linkedin && (
               <a
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-              className="underline text-[#64ffda] hover:text-[#64ffda]/80"
+                className="underline text-[#64ffda] hover:text-[#64ffda]/80"
               >
                 LinkedIn
               </a>
@@ -63,7 +53,7 @@ function Home() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-              className="underline text-[#64ffda] hover:text-[#64ffda]/80"
+                className="underline text-[#64ffda] hover:text-[#64ffda]/80"
               >
                 GitHub
               </a>
@@ -73,7 +63,7 @@ function Home() {
                 href={socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-              className="underline text-[#64ffda] hover:text-[#64ffda]/80"
+                className="underline text-[#64ffda] hover:text-[#64ffda]/80"
               >
                 Twitter
               </a>
@@ -83,7 +73,7 @@ function Home() {
                 href={socialLinks.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-              className="underline text-[#64ffda] hover:text-[#64ffda]/80"
+                className="underline text-[#64ffda] hover:text-[#64ffda]/80"
               >
                 YouTube
               </a>
