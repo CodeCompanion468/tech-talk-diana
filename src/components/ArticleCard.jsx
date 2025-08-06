@@ -1,9 +1,3 @@
-/**
- * Card component to render an article entry.
- *
- * Props:
- * - article: An object with title, url, description and tags properties.
- */
 function ArticleCard({ article }) {
   return (
     <a
