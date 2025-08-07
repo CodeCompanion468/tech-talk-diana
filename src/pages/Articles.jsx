@@ -49,7 +49,12 @@ function Articles() {
         <p>No articles found for {selectedTag}.</p>
       )}
     </div>
+<<<<<<< HEAD
   )
 }
 
 export default Articles
+=======
+    )
+  }
+>>>>>>> 76649d6f1cb1e8be469151699aedf6a9eaa8b881
