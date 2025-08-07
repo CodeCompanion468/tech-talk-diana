@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
-  const handleToggle = () => setOpen(!open)
+  const [open, setOpen] = useState(false);
+  const handleToggle = () => setOpen(!open);
 
   const baseLink =
-    'text-sm font-medium px-3 py-2 rounded-md transition-colors duration-200'
-  const activeClass = 'bg-[#64ffda] text-[#0a192f]'
+    'text-sm font-medium px-3 py-2 rounded-md transition-colors duration-200';
+  const activeClass = 'bg-[#64ffda] text-[#0a192f]';
 
   return (
     <nav className="bg-[#112240]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
+          {/* Site title */}
           <div className="flex-shrink-0">
             <NavLink
               to="/"
@@ -22,6 +23,7 @@ function Navbar() {
               Tech Talk with Diana
             </NavLink>
           </div>
+          {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <NavLink
@@ -51,6 +53,7 @@ function Navbar() {
               </NavLink>
             </div>
           </div>
+          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               type="button"
@@ -89,4 +92,51 @@ function Navbar() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M6
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Mobile menu items */}
+      {open && (
+        <div className="md:hidden" id="mobile-menu">
+          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${baseLink} block ${isActive ? activeClass : 'hover:bg-[#112240] hover:text-[#64ffda]'}`
+              }
+              onClick={() => setOpen(false)}
+              end
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/articles"
+              className={({ isActive }) =>
+                `${baseLink} block ${isActive ? activeClass : 'hover:bg-[#112240] hover:text-[#64ffda]'}`
+              }
+              onClick={() => setOpen(false)}
+            >
+              Articles
+            </NavLink>
+            <NavLink
+              to="/videos"
+              className={({ isActive }) =>
+                `${baseLink} block ${isActive ? activeClass : 'hover:bg-[#112240] hover:text-[#64ffda]'}`
+              }
+              onClick={() => setOpen(false)}
+            >
+              Videos
+            </NavLink>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}
+
+export default Navbar;
