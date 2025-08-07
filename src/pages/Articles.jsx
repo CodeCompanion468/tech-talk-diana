@@ -49,5 +49,7 @@ function Articles() {
         <p>No articles found for {selectedTag}.</p>
       )}
     </div>
-    )
-  }
+  )
+}
+
+export default Articles
