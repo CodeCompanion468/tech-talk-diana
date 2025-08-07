@@ -4,7 +4,7 @@ import ArticleCard from '../components/ArticleCard'
 
 function Articles() {
   const allTags = Array.from(
-    new Set(articlesData.flatMap((article) => article.tags)),
+    new Set(articlesData.flatMap((article) => article.tags))
   )
 
   const [selectedTag, setSelectedTag] = useState('All')
@@ -49,5 +49,7 @@ function Articles() {
         <p>No articles found for {selectedTag}.</p>
       )}
     </div>
-    )
+  )
 }
+
+export default Articles
